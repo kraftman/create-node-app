@@ -1,7 +1,7 @@
 'use strict';
 
 
-const homeRoute = (fastify) => {
+const homeRoute = async (fastify) => {
   fastify.get('/', async () => {
     return 'ready'
   })

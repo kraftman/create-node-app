@@ -1,0 +1,22 @@
+{
+  "name": "create-node-app",
+  "version": "1.0.0",
+  "description": "Basic boilerplate node app",
+  "main": "src/fastify/index.js",
+  "repository": "git@github.com:kraftman/create-node-app.git",
+  "author": "Chris <me@itschr.is>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/fastify/index.js",
+    "start-debug": "node --inspect src/fastify/index.js"
+  },
+  "dependencies": {
+    "fastify": "^1.12.1"
+  },
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.1.0"
+  }
+}
