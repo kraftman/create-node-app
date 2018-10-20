@@ -12,5 +12,5 @@ Contains:
 
 [build-url]: https://travis-ci.org/kraftman/create-node-app
 [build-url-svg]: https://travis-ci.org/kraftman/create-node-app.svg?branch=master
-[codecov-url]: https://codecov.io/gh/kraftman/create-node-app
-[codecov-url-svg]: https://codecov.io/gh/kraftman/create-node-app/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/arnabk/create-node-app
+[codecov-url-svg]: https://codecov.io/gh/arnabk/create-node-app/branch/issue-23/graph/badge.svg
