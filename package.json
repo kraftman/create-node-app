@@ -9,6 +9,8 @@
   "scripts": {
     "start": "node src/fastify/index.js",
     "start-debug": "node --inspect src/fastify/index.js",
+    "start:express": "node src/express/index.js",
+    "start-debug:express": "node --inspect src/express/index.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "precommit": "lint-staged",
     "test": "nyc mocha ./src/**/**/*.spec.js"
@@ -21,6 +23,7 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "express": "^4.16.4",
     "fastify": "^1.12.1"
   },
   "devDependencies": {
