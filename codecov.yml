@@ -3,4 +3,5 @@ coverage:
     project:
       default:
         # basic
-        threshold: 50
+        tests:
+          target: 0%
