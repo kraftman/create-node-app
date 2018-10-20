@@ -1,7 +1,0 @@
-coverage:
-  status:
-    project:
-      default:
-        # basic
-        tests:
-          target: 0%
