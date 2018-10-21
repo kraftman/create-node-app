@@ -11,6 +11,7 @@
     "start-debug": "node --inspect src/fastify/index.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "precommit": "lint-staged",
+    "docker": "docker-compose up",
     "test": "nyc mocha ./src/**/**/*.spec.js"
   },
   "lint-staged": {
