@@ -17,7 +17,7 @@
     "e2e": "mocha ./e2e/**/*.spec.js",
     "e2e-debug": "mocha --inspect-brk ./e2e/**/*.spec.js",
     "test": "mocha ./{src,e2e}/**/*.spec.js",
-    "test-cov": "nyc mocha ./src/**/**/*.spec.js",
+    "test-cov": "nyc mocha ./{src,e2e}/**/*.spec.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "lint-staged": {
@@ -28,15 +28,13 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "chai": "^4.2.0",
     "express": "^4.16.4",
     "fastify": "^1.12.1",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "chai": "4.2.0",
     "codecov": "^3.1.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.4",
     "eslint": "5.7.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-config-prettier": "3.1.0",
@@ -44,8 +42,11 @@
     "eslint-plugin-prettier": "3.0.0",
     "husky": "1.1.2",
     "lint-staged": "7.3.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
     "nyc": "13.1.0",
     "prettier": "1.14.3",
-    "sinon": "7.0.0"
+    "sinon": "7.0.0",
+    "supertest": "3.3.0"
   }
 }
