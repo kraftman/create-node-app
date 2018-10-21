@@ -8,10 +8,17 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/fastify/index.js",
+    "dev": "nodemon src/fastify/index.js",
+    "start-express": "node src/express/index.js",
     "start-debug": "node --inspect src/fastify/index.js",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "precommit": "lint-staged",
-    "test": "nyc mocha ./src/**/**/*.spec.js"
+    "unit": "mocha ./src/**/*.spec.js",
+    "unit-debug": "mocha --inspect-brk ./src/unit/**/*.spec.js",
+    "e2e": "mocha ./e2e/**/*.spec.js",
+    "e2e-debug": "mocha --inspect-brk ./e2e/**/*.spec.js",
+    "test": "mocha ./{src,e2e}/**/*.spec.js",
+    "test-cov": "nyc mocha ./src/**/**/*.spec.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "lint-staged": {
     "*.js": [
