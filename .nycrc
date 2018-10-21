@@ -8,5 +8,8 @@
   "reporter": [
     "text",
     "lcov"
+  ],
+  "exclude": [
+
   ]
 }
