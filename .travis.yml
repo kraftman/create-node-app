@@ -6,4 +6,6 @@ install:
   - yarn 
 script:
   - yarn test-cov
+  # docker compose script
+  - yarn docker:compose
 after_success: yarn coverage
