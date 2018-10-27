@@ -18,7 +18,10 @@
     "e2e-debug": "mocha --inspect-brk ./e2e/**/*.spec.js",
     "test": "mocha ./{src,e2e}/**/*.spec.js",
     "test-cov": "nyc mocha ./{src,e2e}/**/*.spec.js",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "docker": "npm run docker:compose && npm run docker:exit",
+    "docker:compose": "docker-compose up -d",
+    "docker:exit": "docker container stop node-app"
   },
   "lint-staged": {
     "*.js": [
