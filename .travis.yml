@@ -8,4 +8,6 @@ script:
   - yarn test-cov
   # docker compose script
   - yarn docker:compose
-after_success: yarn coverage
+after_success: 
+  - yarn coverage
+  - yarn docker:exit

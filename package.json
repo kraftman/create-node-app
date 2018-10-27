@@ -19,7 +19,9 @@
     "test": "mocha ./{src,e2e}/**/*.spec.js",
     "test-cov": "nyc mocha ./{src,e2e}/**/*.spec.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "docker:compose": "docker-compose up"
+    "docker": "npm run docker:compose && npm run docker:exit",
+    "docker:compose": "docker-compose up -d",
+    "docker:exit": "docker container stop node-app"
   },
   "lint-staged": {
     "*.js": [
